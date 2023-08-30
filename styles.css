@@ -106,7 +106,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #36a188;
-  box-shadow: 0 2px 3px 0; rgba(0, 0, 0, 0.24);
 }
 
 input[type=submit]:active {
