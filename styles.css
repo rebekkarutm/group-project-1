@@ -6,6 +6,7 @@ body {
   background-attachment: fixed;
 }
 
+/* navbar */
  .navbar {
   overflow: hidden;
   display: flex;
@@ -72,6 +73,19 @@ body {
   display: block;
 }
 
+/* logo */
+.logo {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 200px;
+}
+
+/* newsletter */
 .newsletter {
   position: absolute;
   bottom: 20px;
