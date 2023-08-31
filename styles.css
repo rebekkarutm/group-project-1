@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -12,6 +14,16 @@ body {
   font-family: "Inria Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 6px;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
 }
 
 /* video */
@@ -39,7 +51,8 @@ body {
 }
 
 /* navbar */
- .navbar {
+.navbar {
+  /* position: relative; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -74,7 +87,8 @@ body {
   letter-spacing: 6px;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: #36a188;
   border-radius: 6px;
   border-color: #36a188;
@@ -106,6 +120,37 @@ body {
   display: block;
 }
 
+main {
+  position: relative;
+  border-radius: 5px;
+  margin: 5em 5em 2em 5em;
+  background: #eee8e8;
+  opacity: 50%;
+  letter-spacing: normal;
+  padding: 1em;
+  max-width: 80em;
+}
+
+main h1 {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-banner {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
 /* logo */
 .logo {
   position: relative;
@@ -115,10 +160,23 @@ body {
   height: 85vh;
 }
 
+.logo-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
 .logo-img {
   position: relative;
   width: 250px;
   height: 250px;
+}
+
+.logo-img-content {
+  position: relative;
+  width: 125px;
+  height: 125px;
 }
 
 .logo-white {
@@ -127,10 +185,23 @@ body {
   width: 250px;
   height: 250px;
   opacity: 0;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
+}
+
+.logo-white-content {
+  position: absolute;
+  object-fit: contain;
+  width: 125px;
+  height: 125px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .logo-white:hover {
+  opacity: 1;
+}
+
+.logo-white-content:hover {
   opacity: 1;
 }
 
@@ -141,6 +212,19 @@ body {
   height: 28px;
   width: auto;
   margin-bottom: 20px;
+}
+
+.socials-content {
+  display: flex;
+  justify-content: center;
+  height: 28px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .spotify {
