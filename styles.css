@@ -17,6 +17,7 @@ body {
   height: 100%;
 }
 
+/* container div around the whole page content */
 .container {
   display: flex;
   flex-direction: column;
@@ -24,6 +25,10 @@ body {
   align-items: center;
   height: 100vh;
   justify-content: space-between;
+  /* fade in effect */
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
 }
 
 /* video */
@@ -120,15 +125,32 @@ body {
   display: block;
 }
 
+/* upper logo container */
+
+.upper-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-logo-container img {
+  height: 50px;
+}
+
+
+/*  main content section */
 main {
   position: relative;
   border-radius: 5px;
+  color: #eee8e8;
   margin: 5em 5em 2em 5em;
-  background: #eee8e8;
-  opacity: 50%;
   letter-spacing: normal;
   padding: 1em;
-  max-width: 80em;
+  max-width: 60em;
+  margin-top: 20px;
+  word-spacing: 5px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 main h1 {
@@ -142,6 +164,8 @@ main h1 {
   justify-content: center;
   align-items: center;
 }
+
+/* Image banner in the content pages */
 .about-banner {
   position: relative;
   align-items: center;
@@ -160,6 +184,7 @@ main h1 {
   height: 85vh;
 }
 
+/* Different rule set for the content pages */
 .logo-content {
   display: flex;
   flex-direction: row;
@@ -173,6 +198,7 @@ main h1 {
   height: 250px;
 }
 
+/* Different rule set for the content pages */
 .logo-img-content {
   position: relative;
   width: 125px;
@@ -188,6 +214,7 @@ main h1 {
   transition: opacity 0.3s;
 }
 
+/* Different rule set for the content pages - smaller logo */
 .logo-white-content {
   position: absolute;
   object-fit: contain;
@@ -231,7 +258,7 @@ main h1 {
   margin: 0 10px;
   display: flex;
   justify-content: center;
-  height: 28px;
+  height: 20px;
   width: auto;
   margin-bottom: 20px;
 }
@@ -240,7 +267,7 @@ main h1 {
   margin: 0 10px;
   display: flex;
   justify-content: center;
-  height: 28px;
+  height: 20px;
   width: auto;
   margin-bottom: 20px;
 }
@@ -249,7 +276,7 @@ main h1 {
   margin: 0 10px;
   display: flex;
   justify-content: center;
-  height: 28px;
+  height: 20px;
   width: auto;
   margin-bottom: 20px;
 }
@@ -258,7 +285,17 @@ main h1 {
   margin: 0 10px;
   display: flex;
   justify-content: center;
-  height: 28px;
+  height: 20px;
   width: auto;
   margin-bottom: 20px;
+}
+
+/* fade in effect */
+@keyframes fadeInAnimation {
+  20% {
+      opacity: 0.9;
+  }
+  100% {
+      opacity: 1;
+   }
 }
