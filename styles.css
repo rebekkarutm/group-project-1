@@ -26,9 +26,9 @@ body {
   height: 100vh;
   justify-content: space-between;
   /* fade in effect */
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 2;
-  animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode:both;
 }
 
 /* video */
@@ -158,6 +158,35 @@ main h1 {
   padding-bottom: 1em;
 }
 
+.p-contact {
+  text-align: center;
+}
+
+/* paragraph link styling */
+.p-contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.posters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.poster-1 {
+  width: 20em;
+}
+
+.poster-2 {
+  width: 20em;
+}
+
+.poster-3 {
+  width: 20em;
+}
 .img-container {
   display: flex;
   flex-direction: column;
