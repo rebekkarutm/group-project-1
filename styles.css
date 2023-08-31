@@ -157,6 +157,25 @@ main h1 {
   font-size: 1.5em;
   padding-bottom: 1em;
 }
+/* Release artworks container*/
+.release-container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    ". . . ."
+    ". . . ."; 
+}
+
+
+.release-container img {
+  position: relative;
+  width: 10em;
+  height: auto;
+  border-radius: 50%;
+  border-color: #eee8e8;D
+}
 
 .p-contact {
   text-align: center;
