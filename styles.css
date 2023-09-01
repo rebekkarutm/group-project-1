@@ -193,17 +193,10 @@ main h1 {
   gap: 1em;
 }
 
-.poster-1 {
+.poster-1, .poster-2, .poster-3 {
   width: 20em;
 }
 
-.poster-2 {
-  width: 20em;
-}
-
-.poster-3 {
-  width: 20em;
-}
 .img-container {
   display: flex;
   flex-direction: column;
@@ -344,4 +337,48 @@ main h1 {
   100% {
       opacity: 1;
    }
+}
+
+/* re-sizing for phone screen */
+@media (width < 391px) {
+  .logo-img {
+    width: 175px;
+    height: 175px;
+  }
+  .navbar {
+    margin-top: 0px;
+    flex-direction: column;
+    
+  }
+  .navbar a {
+    padding: 0;
+  }
+
+  .release-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+  }
+
+  .video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .poster-1, .poster-2, .poster-3 {
+    width: 10em;
+  }
+
+  .img-container img {
+    width: 20em;
+  }
+
+  main {
+    margin: 0;
+  }
 }
